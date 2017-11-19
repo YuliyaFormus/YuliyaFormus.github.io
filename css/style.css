@@ -136,20 +136,32 @@ margin-top: 20px;
     margin: 10%;
 }
 
-
-a.buttons{
+ li.buttons{
 
     padding: 10px;
-    margin: 30px 0px;
-    font-size: 28px;
-    color: #e9e9f5;
+    margin: 20px 0px;
+    font-size: 24px;
+    color: #afa3a5;
     text-decoration: none;
     text-align: center;
-    border: 1px solid #e9e9f5;
+    border: 2px solid #807172;
     border-radius: 5px;
-    text-overflow: clip;
+/*    text-overflow: clip;*/
+    overflow: hidden;
+     background-color: #51464c;
 }
 
+li.buttons:hover{
+    background: #afa3a5;
+    color: #51464c;
+}
+.link {
+    color: #afa3a5;
+}
+
+.link:hover {
+    color: #51464c;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -169,6 +181,8 @@ a.buttons{
     top:  5%;
     }
 }
+
+
 
 
 
