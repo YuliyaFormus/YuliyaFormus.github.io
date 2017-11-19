@@ -1,0 +1,171 @@
+*{
+/*
+    margin: 0px;
+    padding: 0px;
+*/
+    max-height:100%;
+	overflow-x: hidden;
+  
+}
+section{
+    height: 100%; /* высота секции равна высоте области просмотра */
+    width: 100%;
+}
+
+ #Home, #About, #Portfolio{
+  height: 100vh; /* высота секции равна высоте области просмотра */
+  width: 100%;
+  background-color: #ffffff;
+  background-image:url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size:  100%;
+  background-position: center ;
+  background-attachment: fixed;
+}
+.home_text {
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    text-align: center;
+}
+h1{
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden;
+}
+a{
+    overflow: visible; !important;
+    
+}
+
+h4{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#MainNav{
+    background-color: #2d2b40;
+    color: #e9e9f5;
+}
+/*значок мишки*/
+
+   
+  
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+  max-width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  bottom: 5%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #403e56;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #403e56;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+/*конец значка*/
+
+#About {
+  background-image:url("../img/4.png");
+}
+
+.aboutme {
+position: relative;
+    top:  10%;
+text-align: center;
+}
+
+#Portfolio{
+    background-image:url("../img/5.jpg");
+    display: flex;
+}
+.label{
+    text-align: center; 
+    font-weight: bold;
+}
+.gallery{
+margin-top: 20px;
+}
+
+#Contacts{
+    background: #f0f0f0;/* Для старых браузров */
+    background: linear-gradient(to top, #51464c, #afa3a5);
+}
+
+.contacts_img{
+    width: 100%;
+}
+
+.contacts{
+    margin: 10%;
+}
+
+
+a.buttons{
+
+    padding: 10px;
+    margin: 30px 0px;
+    font-size: 28px;
+    color: #e9e9f5;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #e9e9f5;
+    border-radius: 5px;
+    text-overflow: clip;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+#Home, #About, #Portfolio{ 
+  background-size: auto 100%; !important;
+     }
+    
+.home_text {
+    position: absolute;
+    right: 5%;
+    }
+    
+.icon-scroll{
+        display: none;
+    }
+}
+
+
+
